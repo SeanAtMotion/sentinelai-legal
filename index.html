@@ -1,52 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SentinelAI Privacy</title>
-  <style>
-    body {
-      font-family: system-ui;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px;
-      line-height: 1.6;
-    }
-
-    h1 { font-size: 32px; }
-    h2 { margin-top: 30px; }
-
-    .muted { color: #666; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SentinelAI — privacy-first Chrome extension that warns you before sharing sensitive data with AI tools." />
+  <title>SentinelAI — Privacy Protection for AI Tools</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-  <h1>SentinelAI</h1>
-  <p class="muted">Privacy-first AI data protection extension</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">🛡</span>
+        <span class="brand-name">SentinelAI</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>What we do</h2>
-  <p>
-    SentinelAI detects sensitive information (like emails, API keys, and identifiers)
-    before it is submitted into AI tools, chat systems, or web forms.
-  </p>
+  <main>
+    <section class="hero">
+      <div class="hero-badge">
+        <span aria-hidden="true"></span>
+        Privacy-first Chrome extension
+      </div>
+      <h1>Your privacy safety net for AI tools</h1>
+      <p class="lead">
+        SentinelAI detects sensitive information before you send it to ChatGPT, Claude,
+        and other AI platforms — so you can catch mistakes before they become leaks.
+      </p>
+      <div class="cta-row" style="justify-content: center;">
+        <a class="btn btn-primary" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer">
+          Install on Chrome
+        </a>
+        <a class="btn btn-secondary" href="privacy.html">Read Privacy Policy</a>
+      </div>
+    </section>
 
-  <h2>What we do NOT do</h2>
-  <ul>
-    <li>We do not sell user data</li>
-    <li>We do not store raw sensitive text</li>
-    <li>We do not track browsing history</li>
-  </ul>
+    <section class="section">
+      <h2 class="section-title">What we do</h2>
+      <p class="section-desc">
+        Real-time protection that runs locally in your browser while you work.
+      </p>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🔍</div>
+          <h3>Detect sensitive data</h3>
+          <p>Scans for SSNs, emails, phone numbers, API keys, credit cards, and more as you type or paste.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">⚠️</div>
+          <h3>Warn before you send</h3>
+          <p>Shows a clear privacy alert with options to review your content, go back, or send anyway.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📎</div>
+          <h3>Scan attached files</h3>
+          <p>Text-based files pasted or uploaded into AI chats are checked with the same detection rules.</p>
+        </article>
+      </div>
+    </section>
 
-  <h2>Data handling</h2>
-  <p>
-    Detection happens locally in the browser whenever possible.
-    In enterprise mode, organizations may route scans through their own secured backend.
-  </p>
+    <section class="section">
+      <h2 class="section-title">What we do not do</h2>
+      <p class="section-desc">Built for trust. No hidden data collection.</p>
+      <ul class="feature-list">
+        <li>
+          <span class="icon no" aria-hidden="true">✕</span>
+          <span>We do not sell user data</span>
+        </li>
+        <li>
+          <span class="icon no" aria-hidden="true">✕</span>
+          <span>We do not store raw sensitive text on our servers</span>
+        </li>
+        <li>
+          <span class="icon no" aria-hidden="true">✕</span>
+          <span>We do not track your browsing history</span>
+        </li>
+        <li>
+          <span class="icon yes" aria-hidden="true">✓</span>
+          <span>Detection runs locally in your browser — you stay in control</span>
+        </li>
+      </ul>
+    </section>
 
-  <h2>Contact</h2>
-  <p>
-    For privacy questions: support@yourdomain.com (replace later)
-  </p>
+    <section class="section">
+      <h2 class="section-title">Data handling</h2>
+      <div class="info-panel">
+        <p>
+          Detection happens entirely on your device. When you submit a prompt, SentinelAI
+          analyzes the text locally and shows a warning if personal or sensitive information
+          is found. Optional privacy events (what was detected and your decision) may be
+          stored locally on your device only.
+        </p>
+        <p>
+          The consumer extension does not require an account or backend connection.
+          Enterprise deployments may optionally route metadata to an organization's own
+          secured infrastructure — governed entirely by customer policy.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-desc">Questions about privacy or the extension?</p>
+      <div class="contact-card">
+        <span class="label">Email</span>
+        <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 SentinelAI. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

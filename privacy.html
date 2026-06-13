@@ -1,46 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Privacy Policy - SentinelAI</title>
-  <style>
-    body {
-      font-family: system-ui;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px;
-      line-height: 1.6;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SentinelAI Privacy Policy — how we handle data in the Chrome extension." />
+  <title>Privacy Policy — SentinelAI</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-<h1>Privacy Policy</h1>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">🛡</span>
+        <span class="brand-name">SentinelAI</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="privacy.html" class="active">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
 
-<p>SentinelAI is designed to detect sensitive data locally in the browser.</p>
+  <main>
+    <header class="prose-header">
+      <h1>Privacy Policy</h1>
+      <div class="prose-meta">
+        <span>Effective date: June 13, 2026</span>
+        <span>Applies to: SentinelAI Chrome Extension</span>
+      </div>
+    </header>
 
-<h2>Data Collection</h2>
-<p>
-We do not collect or store personally identifiable information from users.
-Sensitive text is analyzed in real time and not retained.
-</p>
+    <nav class="toc" aria-label="Table of contents">
+      <p class="toc-title">On this page</p>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#collection">Data collection</a></li>
+        <li><a href="#local">Local processing</a></li>
+        <li><a href="#storage">What is stored</a></li>
+        <li><a href="#third-party">Third-party services</a></li>
+        <li><a href="#enterprise">Enterprise mode</a></li>
+        <li><a href="#rights">Your rights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
 
-<h2>Third-party services</h2>
-<p>
-The extension does not send user content to third-party servers unless explicitly configured in enterprise deployments.
-</p>
+    <article class="prose">
+      <h2 id="overview">Overview</h2>
+      <p>
+        SentinelAI ("we," "our," or "us") provides a Chrome browser extension designed to
+        help you avoid accidentally sharing sensitive personal information with AI tools and
+        web forms. This Privacy Policy explains what data the extension processes and how
+        that data is handled.
+      </p>
+      <p>
+        The consumer version of SentinelAI is built privacy-first: scanning happens locally
+        in your browser, and no account is required.
+      </p>
 
-<h2>Enterprise mode</h2>
-<p>
-Enterprise customers may configure SentinelAI to send scan events to their internal compliance systems.
-All processing is governed by customer policy.
-</p>
+      <h2 id="collection">Data collection</h2>
+      <p>
+        We do not collect, sell, or rent personally identifiable information from individual
+        users of the consumer extension. Sensitive text you type or paste is analyzed in
+        real time and is not transmitted to SentinelAI servers.
+      </p>
+      <p>The extension does not:</p>
+      <ul>
+        <li>Record or store the full content of your prompts on our servers</li>
+        <li>Track browsing history across websites</li>
+        <li>Collect data for advertising purposes</li>
+      </ul>
 
-<h2>Contact</h2>
-<p>
-Questions: support@yourdomain.com
-</p>
+      <h2 id="local">Local processing</h2>
+      <p>
+        When you interact with supported AI platforms or forms, SentinelAI scans text locally
+        using pattern-based detection running entirely within the extension. If sensitive
+        information is detected, you receive an on-screen privacy warning before content is
+        submitted.
+      </p>
+      <p>
+        Text-based files you paste or attach may also be read locally on your device for
+        the same detection purposes. File contents are not uploaded to SentinelAI.
+      </p>
+
+      <h2 id="storage">What is stored</h2>
+      <p>
+        The extension may store the following data locally on your device using Chrome's
+        built-in storage APIs:
+      </p>
+      <ul>
+        <li><strong>Settings</strong> — such as whether privacy warnings are enabled</li>
+        <li><strong>Privacy events (optional)</strong> — a local log of detections and your
+          decisions (e.g., review, send, cancel), kept on-device only and limited to recent entries</li>
+      </ul>
+      <p>
+        This local data is not synced to SentinelAI unless you use an enterprise deployment
+        explicitly configured by your organization.
+      </p>
+
+      <h2 id="third-party">Third-party services</h2>
+      <p>
+        The consumer extension does not send user content to third-party servers. The
+        extension operates on websites you visit (such as AI chat platforms) but does not
+        share your input with external analytics, advertising, or data brokers.
+      </p>
+      <p>
+        AI platforms themselves (ChatGPT, Claude, etc.) have their own privacy policies
+        governing data you choose to submit. SentinelAI helps you review content before
+        submission but cannot control how those services handle data once sent.
+      </p>
+
+      <h2 id="enterprise">Enterprise mode</h2>
+      <p>
+        Organizations using SentinelAI Enterprise may configure the extension to send
+        scan metadata or events to their own internal compliance systems. In such
+        deployments, data handling is governed by the customer's policies and agreements
+        with their users — not by this consumer privacy policy.
+      </p>
+
+      <h2 id="rights">Your rights</h2>
+      <p>
+        Because the consumer extension stores data locally on your device, you can clear
+        extension data at any time by removing the extension or clearing its storage in
+        Chrome settings. You may disable privacy warnings in the extension settings without
+        uninstalling.
+      </p>
+
+      <h2 id="contact">Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy or how SentinelAI handles data,
+        contact us at:
+      </p>
+      <div class="contact-card">
+        <span class="label">Email</span>
+        <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 SentinelAI. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
